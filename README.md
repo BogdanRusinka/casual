@@ -91,18 +91,18 @@ casual.phone           // '380 82 790 25 92'
 // Numbers
 
 casual.random                            // 0.7171590146608651 (core generator)
-casual.integer(from = -1000, to = 1000)  // 632
-casual.double(from = -1000, to = 1000)   // -234.12987444
-casual.array_of_digits(n = 7)            // [ 4, 8, 3, 1, 7, 6, 6 ]
-casual.array_of_integers(n = 7)          // [ -105, -7, -532, -596, -430, -957, -234 ]
-casual.array_of_doubles(n = 7)           // [ -866.3755785673857, -166.62194719538093, ...]
+casual.integer(-1000, 1000)  // 632
+casual.double(-1000, 1000)   // -234.12987444
+casual.array_of_digits(7)            // [ 4, 8, 3, 1, 7, 6, 6 ]
+casual.array_of_integers(7)          // [ -105, -7, -532, -596, -430, -957, -234 ]
+casual.array_of_doubles(7)           // [ -866.3755785673857, -166.62194719538093, ...]
 
 // Date
 
 casual.unix_time                    // 659897901
 casual.moment                       // moment.js object see http://momentjs.com/docs/
-casual.date(format = 'YYYY-MM-DD')  // '2001-07-06' (see available formatters http://momentjs.com/docs/#/parsing/string-format/)
-casual.time(format = 'HH:mm:ss')    // '03:08:02' (see available formatters http://momentjs.com/docs/#/parsing/string-format/)
+casual.date('YYYY-MM-DD')  // '2001-07-06' (see available formatters http://momentjs.com/docs/#/parsing/string-format/)
+casual.time('HH:mm:ss')    // '03:08:02' (see available formatters http://momentjs.com/docs/#/parsing/string-format/)
 casual.century                      // 'IV'
 casual.am_pm                        // 'am'
 casual.day_of_year                  // 323
